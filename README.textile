@@ -1,17 +1,17 @@
 h2. INSTALLATION
 
-<code>sudo gem install dcrec1-my-ldap-authenticator -s http://gems.github.com</code>
+<pre><code>sudo gem install dcrec1-my-ldap-authenticator -s http://gems.github.com</code></pre>
 
 h2. USAGE
 
-<code>require 'my_ldap_authenticator'
+<pre><code>require 'my_ldap_authenticator'
 
 ldap = MyLDAP.new("ad.host.com", "DC=host,DC=com")
 
 ldap.authenticate(admin, password)
 user = ldap.find("sAMAccountName", "elvis.presley")
 
-user2 = ldap.find("sAMAccountName", "elvis.presley") if ldap.authenticates?("elvis.presley", password)</code>
+user2 = ldap.find("sAMAccountName", "elvis.presley") if ldap.authenticates?("elvis.presley", password)</code></pre>
 
 h2. LICENSE:
 
